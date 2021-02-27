@@ -13,15 +13,33 @@
     <body>
     <h1>Vue Instance</h1>
     <p>To start with VueJS, we need to create instance of Vue , which is called root Vue Instance. A Vue Instance is the root of our application. It is created by passing option objects into it like data, el, and methods, properties to the constructor.</p>
-    <i>Syntax:</i>
+    <i>Syntax for Vue Instance:</i>
     <code>
       var myObj = new Vue({  <br/>
         //options <br/>
       })
     </code>
+    <i>Program how to create a Vue Instance</i>
     <div id="app">
       {{message}}
     </div>
+    <h1>Declarative rendering</h1>
+    <p>All the core of Vue native is a system that enables us to declaratively rendering data to the DOM using simple, straightforward template syntax </p>
+    <i>Program for Declaratively rendering</i>
+    <code>
+      <div id="myApp">
+        {{title}}
+      </div>
+      <script>
+      var myvar = new Vue({ //here we create a new Vue object with new Vue()
+        el:'#myApp', //The property el: binds new Vue object to the HTML element with id="myApp"
+        data:{
+          title:'Hello Vue!'
+        }
+      })
+      </script>
+    </code>
+
       <script src="script.js"></script>
   </body>
 </html>
