@@ -31,5 +31,22 @@
         }
       })
     </script>
+    <h4>v-html directive</h4>
+    <p>It updates element's innerHTML. Using v-html with user-suplied data can be dangerous. It is suggested that you use only v-html, when you are absolutely sure about the security of the data source, or pipe it through the custom filetrs that sanitizes untrusted HTML.</p>
+    <i>Program for v-html directive</i>
+    <div id="myHtml">
+      {{content}}<br/>
+      <span v-text="content"></span>
+      <div style="border:1px solid gray; width:200px; padding-left:50px;"><span v-html="content"></span></div>
+    </div>
+    <script>
+      var objHtml = new Vue({
+        el:'#myHtml',
+        data:{
+          content:'<h1>VueJS</h1><p>v-html Directive</p>'
+        }
+      })
+    </script>
+
   </body>
 </html>
