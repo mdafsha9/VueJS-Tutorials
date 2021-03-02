@@ -47,6 +47,28 @@
         }
       })
     </script>
-
+    <h4>v-once directive</h4>
+    <p>It is used to avoid unwanted re-renders of an element. It treats the element as a static content after rendering it once for the first time. This improves performance as it does not have to be rendered again.</p>
+    <i>Program for v-once directive</i>
+    <div id="myOnce">
+        <p v-once>{{msz}}</p>
+    </br>
+      {{myFun()}}
+      {{msz}}
+    </div>
+    <script>
+      var objOnce = new Vue({
+        el:'#myOnce',
+        data:{
+          msz:'Hello v-once!'
+        },
+        methods:{
+          myFun : function(){
+            this.msz = 'v-once directive';
+            return this.msz;
+          }
+        }
+      })
+    </script>
   </body>
 </html>
