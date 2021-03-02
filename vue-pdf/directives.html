@@ -52,9 +52,9 @@
     <i>Program for v-once directive</i>
     <div id="myOnce">
         <p v-once>{{msz}}</p>
-    </br>
+      {{msz}}</br>
       {{myFun()}}
-      {{msz}}
+
     </div>
     <script>
       var objOnce = new Vue({
@@ -69,6 +69,19 @@
           }
         }
       })
+    </script>
+    <h4>v-bind directive</h4>
+    <p>It is used to bind one or more attributes, components prop to an element. If that attribute is bonded to our data defined in vue instance, then dynamically changes can be observed as a data changes.</p>
+    <i>Program for v-bind directive</i>
+    <div id="myBind">
+    </div>
+    <script>
+        var objBind = new Vue({
+          el:'#myBind',
+          data:{
+            
+          }
+        })
     </script>
   </body>
 </html>
