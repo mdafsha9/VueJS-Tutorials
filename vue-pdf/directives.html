@@ -74,12 +74,18 @@
     <p>It is used to bind one or more attributes, components prop to an element. If that attribute is bonded to our data defined in vue instance, then dynamically changes can be observed as a data changes.</p>
     <i>Program for v-bind directive</i>
     <div id="myBind">
+      <p v-bind:title="name">{{main}}</p>
+      <img v-bind:src="url" alt="Vuejs image"><br/>
+      <a v-bind:href="link">Google</a>
     </div>
     <script>
         var objBind = new Vue({
           el:'#myBind',
           data:{
-            
+            main:'VueJs Tutorials',
+            name:'vuejs',
+            url:'assets/download.png',
+            link:'http://www.google.com'
           }
         })
     </script>
