@@ -38,9 +38,13 @@
       <h2>Directives</h2>
       <p>Directives are instructions for vuejs to do things in a certain way. Built-in directives are v-if, v-else, v-for, v-text, v-html, v-repeat, v-on, v-bind, v-attr, v-show, v-style, v-class etc.,
       <br/>Literal directives are v-transition, v-ref and v-el <br/>Empty Directives are v-pre and v-cloak</p>
-      <h3>v-text directive</h3>
+      <h3>v-text directive:</h3>
       <p>Instead of interpolation, we can use v-text directive and it performs same job as interpolation<br/>
       or<br/>
       v-text directive updates an element textContent. Internally, {{mustache}} are also compiled as v-text directive on a textNode</p>
+      <h3>v-once directive:</h3>
+      <p>It is used to avoid unwanted re-renders of an element. It treats the element is a static content after rendering it once for the first time. It improves the performance as it does not have to be rendered again.</p>
+      <h3>v-html directive</h3>
+      <p>v-html directive updates the element's inner html. Using v-html, with users supplied data can be dangerous. It is suggested that you use v-html when you are absolutely sure about data source or pipe it through custom filters that sanitizes untrusted HTML.  </p>
     </body>
 </html>
