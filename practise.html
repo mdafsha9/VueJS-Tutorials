@@ -13,7 +13,10 @@
   <body>
       <div id="app">
         {{title}}
-        <p v-text="title"></p>
+          {{myOnce()}}
+
+        <span v-once>{{title}}</span>
+
       </div>
       <script src="practise.js"></script>
   </body>
