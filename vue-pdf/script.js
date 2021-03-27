@@ -1,7 +1,7 @@
 var myObj = new Vue({
-  el:'#app',
+  el:'#myApp',
   data:{
-    message:"Hello World!"
-
+    message:"VueJS Material!",
+    title:'You loaded the page on ' + new Date()
   }
 })

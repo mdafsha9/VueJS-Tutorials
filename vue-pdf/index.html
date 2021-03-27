@@ -9,9 +9,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>VueJS Tutorials</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     </head>
     <body>
-      <h1>VueJS Material</h1>
+      <div id="myApp">
+        <h1 v-bind:title="title">{{message}}</h1>
+      </div>
       <h2><mark>What is VueJS ?</mark></h2>
       <p>VueJs is a progressive framework and it is used to build dynamic user interface and Single Page Applications. The core library is mainly focused on view-layer
       only. It is easily pick-up and intergrates with other libraries or existing projects.</p>
@@ -46,5 +49,6 @@
       <p>It is used to avoid unwanted re-renders of an element. It treats the element is a static content after rendering it once for the first time. It improves the performance as it does not have to be rendered again.</p>
       <h3>v-html directive</h3>
       <p>v-html directive updates the element's inner html. Using v-html, with users supplied data can be dangerous. It is suggested that you use v-html when you are absolutely sure about data source or pipe it through custom filters that sanitizes untrusted HTML.  </p>
+      <script src="script.js"></script>
     </body>
 </html>

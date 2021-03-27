@@ -12,11 +12,13 @@
   </head>
   <body>
       <div id="app">
-        {{title}}
+        {{message}}
           {{myOnce()}}
 
-        <span v-once>{{title}}</span>
+        <span v-once>{{message}}</span>
         <div v-html="msz"></div>
+        <a v-bind:href="url">Google</a><br/>
+        <img v-bind:src="pic" v-bind:alt="title" v-bind:title="title">
       </div>
       <script src="practise.js"></script>
   </body>
