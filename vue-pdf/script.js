@@ -1,7 +1,7 @@
 var myObj = new Vue({
-  el:'#app',
+  el:'#myApp',
   data:{
-    message:"Hello World!"
-    url:''
+    message:"Hello World!",
+    url:'assets/download.png'
   }
 })

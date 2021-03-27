@@ -9,9 +9,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title>VueJS Tutorials</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     </head>
     <body>
-      <img src=""
+      <img v-bind:src="url"/>
       <h1>VueJS Material</h1>
       <h2><mark>What is VueJS ?</mark></h2>
       <p>VueJs is a progressive framework and it is used to build dynamic user interface and Single Page Applications. The core library is mainly focused on view-layer
@@ -49,5 +50,7 @@
       <p>v-html directive updates the element's inner html. Using v-html, with users supplied data can be dangerous. It is suggested that you use v-html when you are absolutely sure about data source or pipe it through custom filters that sanitizes untrusted HTML.</p>
       <h3>v-bind directive:</h3>
       <p>It binds one or more attributes or a component props to an elements. if that attribute is bonded to our data defined  </p>
+      <p>v-html directive updates the element's inner html. Using v-html, with users supplied data can be dangerous. It is suggested that you use v-html when you are absolutely sure about data source or pipe it through custom filters that sanitizes untrusted HTML.  </p>
+      <script src="script.js"></script>
     </body>
 </html>
