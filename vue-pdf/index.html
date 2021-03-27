@@ -12,8 +12,10 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     </head>
     <body>
-      <img v-bind:src="url"/>
-      <h1>VueJS Material</h1>
+      <div id="myApp">
+      <img v-bind:src="url" v-bind:width="50"/>
+      <h1 v-bind:title="title">VueJS Material</h1>
+    </div>
       <h2><mark>What is VueJS ?</mark></h2>
       <p>VueJs is a progressive framework and it is used to build dynamic user interface and Single Page Applications. The core library is mainly focused on view-layer
       only. It is easily pick-up and intergrates with other libraries or existing projects.</p>
