@@ -17,3 +17,9 @@ var myDec = new Vue({
     }
   }
 })
+new Vue({
+  el:'#myTem',
+  data:{
+    isRegistered:true
+  }
+})

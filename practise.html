@@ -20,7 +20,19 @@
         <h3>Conditionally rendered using v-if ans v-else directive</h3>
         <div v-if="awesome">Vue is Awesome!</div>
         <div v-else>Oh!no 	&#128517;</div>
+          </div>
+        <div id="myTem">
+        <template v-if="isRegistered">
+          <label>Username:</label>
+          <input type="text" placeholder='Username'/>
+        </template>
+        <template v-else>
+          <label>Email:</label>
+          <input type="email" placeholder="Email"/>
+        </template>
+        <button @click = "isRegistered = ! isRegistered" >Toggle</button>
       </div>
+
       <script src="practise.js"></script>
   </body>
 </html>
