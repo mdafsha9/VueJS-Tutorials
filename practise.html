@@ -12,13 +12,14 @@
   </head>
   <body>
       <div id="app">
-        {{message}}
+        {{title}}
           {{myOnce()}}
 
-        <span v-once>{{message}}</span>
+        <span v-once>{{title}}</span>
         <div v-html="msz"></div>
-        <a v-bind:href="url" v-bind:titlepic=""><img v-bind:src="pictitle"/></a><br/><br/>
-        <img v-bind:src="pic" v-bind:alt="title" v-bind:title="title">
+        <h3>Conditionally rendered using v-if ans v-else directive</h3>
+        <div v-if="awesome">Vue is Awesome!</div>
+        <div v-else>Oh!no 	&#128517;</div>
       </div>
       <script src="practise.js"></script>
   </body>

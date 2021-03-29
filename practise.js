@@ -7,7 +7,8 @@ var myDec = new Vue({
     pic:'images/download.png',
     title:'you loaded this page on ' + new Date(),
     pictitle:'images/google.jfif',
-    titlepic:'Click here to jump Google'
+    titlepic:'Click here to jump Google',
+    awesome:false
   },
   methods:{
     myOnce : function(){
