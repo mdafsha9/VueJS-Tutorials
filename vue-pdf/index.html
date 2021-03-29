@@ -56,8 +56,11 @@
       <h2><mark>Conditionals and loops</mark></h2>
       <h3>v-if directive</h3>
       <p>The directive v-if is used conditionally rendered a block. The block will only be rendered if the directive's expression returns truthy value</p>
-      <h2>Conditional groups with v-if on a <code>template element</code></h2>
+      <h2>Conditional groups with v-if on a <code>template eleement</code></h2>
       <p>Because v-if is a directive, it has to be attached to a single element. But what if we want to toggle with more than one element? In this case, we can use v-if on a <mark>template</mark> element which serves as a invisible wrapper. The final rendered result will not include <mark>template</mark> element. </p>
+      <h3>v-else directive</h3>
+      <p>We can use v-else directive to indicate 'else block' for "v-if" directive.<br/>
+      v-else directive must immediately follow v-if or a v-else-if elements, otherwise it will not be recognized.</p>
       <script src="script.js"></script>
     </body>
 </html>
