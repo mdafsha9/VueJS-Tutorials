@@ -42,6 +42,19 @@
         <span v-else>Congratulations!Your application is approved.</span>
       </div>
 
+      <h2><mark>Controlling reusable elements with key</mark></h2>
+      <div id="myKey">
+        <template v-if="registered">
+          <label>Username:</label>
+          <input type="text" placeholder="Enter your username" key="username"/>
+        </template>
+        <template v-else>
+          <label>Email:</label>
+          <input type="text" placeholder="Enter your Email address" key="email"/>
+        </template>
+        <button @click="registered =! registered">Toggle</button>
+      </div>
+
       <script src="practise.js"></script>
   </body>
 </html>

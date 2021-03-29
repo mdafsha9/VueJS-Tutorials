@@ -27,6 +27,13 @@ new Vue({
 new Vue({
   el:'#myCon',
   data:{
-    status:'process'
+    status:'pending'
+  }
+})
+
+new Vue({
+  el:'#myKey',
+  data:{
+    registered:true
   }
 })
