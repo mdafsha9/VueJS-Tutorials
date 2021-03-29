@@ -23,3 +23,10 @@ new Vue({
     isRegistered:true
   }
 })
+
+new Vue({
+  el:'#myCon',
+  data:{
+    status:'process'
+  }
+})

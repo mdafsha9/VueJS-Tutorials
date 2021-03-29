@@ -21,6 +21,7 @@
         <div v-if="awesome">Vue is Awesome!</div>
         <div v-else>Oh!no 	&#128517;</div>
           </div>
+        <h3>Conditional groups with v-if on a template element</h3>
         <div id="myTem">
         <template v-if="isRegistered">
           <label>Username:</label>
@@ -31,6 +32,14 @@
           <input type="email" placeholder="Email"/>
         </template>
         <button @click = "isRegistered = ! isRegistered" >Toggle</button>
+      </div>
+
+      <h3>Conditionally rendered using v-if, v-else-if and v-else directives</h3>
+      <div id="myCon">
+        <span v-if="status == 'recivied'">Application is recivied!</span>
+        <span v-else-if="status == 'pending'">Application is pending!</span>
+        <span v-else-if="status == 'process'">Application is in process!</span>
+        <span v-else>Congratulations!Your application is approved.</span>
       </div>
 
       <script src="practise.js"></script>
