@@ -37,3 +37,15 @@ new Vue({
     registered:true
   }
 })
+
+new Vue({
+  el:'#myFor',
+  data:{
+    items:[
+      {text:'HTML Tutorials'},
+      {text:'Tailwind CSS'},
+      {text:'JavaScript'},
+      {text:'VueJS Tutorials'}
+    ]
+  }
+})
