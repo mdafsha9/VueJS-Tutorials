@@ -61,3 +61,10 @@ new Vue({
     }
   }
 })
+
+new Vue({
+  el:'#myModel',
+  data:{
+    msz:'Hello Vue!'
+  }
+})
