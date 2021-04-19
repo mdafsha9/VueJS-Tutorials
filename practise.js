@@ -68,3 +68,12 @@ new Vue({
     msz:'Hello Vue!'
   }
 })
+
+new Vue({
+  el:"#prac",
+  data:{
+    url:'http://www.google.com',
+    con:'VueJs',
+    pic:"images/download.png"
+  }
+})
