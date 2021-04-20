@@ -70,10 +70,8 @@ new Vue({
 })
 
 new Vue({
-  el:"#prac",
+  el:'#prac',
   data:{
-    url:'http://www.google.com',
-    con:'VueJs',
-    pic:"images/download.png"
+    status:''
   }
 })

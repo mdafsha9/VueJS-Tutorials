@@ -73,9 +73,11 @@
       </div>
 
       <div id="prac">
-        <a v-bind:href="url" v-bind:title="con">Google</a>
-        <img v-bind:src="pic" v-bind:title="con"/>
+        <p v-if='status == "awesome"'>Vuejs is awesome!</p>
+        <p v-else-if="status == 'medium'">Not bad!</p>
+        <p v-else>Oh! Something went wrong!</p>
       </div>
+
       <script src="practise.js"></script>
   </body>
 </html>
