@@ -77,13 +77,12 @@ new Vue({
 })
 
 new Vue({
-  el:'#rev',
+  el:'#forDir',
   data:{
-    txt:'Hello Vue Tutorials!'
-  },
-  methods:{
-    reverseMsz:function(){
-      this.txt = this.txt.split('').reverse('').join('');
-    }
+    lists:[
+      {con:'Learn JavaScript'},
+      {con:'Lear AngularJS'},
+      {con:'Learn Vuejs'}
+    ]
   }
 })

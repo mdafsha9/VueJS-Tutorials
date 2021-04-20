@@ -86,9 +86,12 @@
         <button @click="login =! login">Toggle</button>
       </div>
 
-      <div id="rev">
-        {{txt}}
-        <button @click="reverseMsz()">ReverseContent</button>
+      <div id="forDir">
+        <ol>
+          <li v-for="list in lists">
+            {{list.con}}
+          </li>
+        </ol>
       </div>
 
       <script src="practise.js"></script>
