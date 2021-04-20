@@ -75,3 +75,15 @@ new Vue({
     login:false
   }
 })
+
+new Vue({
+  el:'#rev',
+  data:{
+    txt:'Hello Vue Tutorials!'
+  },
+  methods:{
+    reverseMsz:function(){
+      this.txt = this.txt.split('').reverse('').join('');
+    }
+  }
+})
