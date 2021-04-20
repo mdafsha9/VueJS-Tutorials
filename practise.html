@@ -73,9 +73,10 @@
       </div>
 
       <div id="prac">
-        <p v-if='status == "awesome"'>Vuejs is awesome!</p>
-        <p v-else-if="status == 'medium'">Not bad!</p>
-        <p v-else>Oh! Something went wrong!</p>
+        <p v-if="progress == 'Initial'">Initial stage!</p>
+        <p v-else-if="progress == 'medium'">Intermediate stage!</p>
+        <p v-else-if="progress =='inCondition'">Good!</p>
+        <pv-else>Awesome :)</p>
       </div>
 
       <script src="practise.js"></script>

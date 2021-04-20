@@ -72,6 +72,6 @@ new Vue({
 new Vue({
   el:'#prac',
   data:{
-    status:''
+    progress:'inCondition'
   }
 })
