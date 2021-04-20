@@ -34,7 +34,7 @@ new Vue({
 new Vue({
   el:'#myKey',
   data:{
-    registered:true
+    registered:false
   }
 })
 
