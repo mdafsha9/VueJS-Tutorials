@@ -72,6 +72,6 @@ new Vue({
 new Vue({
   el:'#prac',
   data:{
-    progress:'inCondition'
+    login:false
   }
 })

@@ -73,10 +73,17 @@
       </div>
 
       <div id="prac">
-        <p v-if="progress == 'Initial'">Initial stage!</p>
-        <p v-else-if="progress == 'medium'">Intermediate stage!</p>
-        <p v-else-if="progress =='inCondition'">Good!</p>
-        <pv-else>Awesome :)</p>
+        <template v-if="login">
+          <label>Firstname:</label><br/>
+          <input type="text" placeholder="Enter your firstname" key="firstname"/><br/>
+          <label>Lastname:</label><br/>
+          <input type="text" placeholder="Enter your lastname" key="lastname"></br>
+        </template>
+        <template v-else>
+          <labe>Email address:</label>
+            <input type="email" placeholder="Enter your email address"/>
+        </template>
+        <button @click="login =! login">Toggle</button>
       </div>
 
       <script src="practise.js"></script>
