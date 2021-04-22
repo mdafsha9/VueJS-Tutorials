@@ -34,5 +34,8 @@
     <p>All Vue components are also Vue instance, so accept the same option objects (except for a few root-specific options) The root Vue Instance accepts properties like el and router, but Vue component cannot. The data property of root Vue Instance is an object, but the Vue component must be a function.</p>
     <h3>Instance Lifecycle hooks</h3>
     <p>Each Vue Instance goes through a series of initialization steps. For example--it needs to set up data observation, compile the template, mount the instance to the DOM, update the DOM when the data changes. Along the way, it also runs functions called Lifecycle hooks, giving users the opportunity to add their own code at specific stages.</p>
+    <h3>Template syntax</h3>
+    <p>It provide HTML based templates that binds DOM with the Vue Instance data. All Vuejs templates are valid HTML that can be parsed by specific compliant browser and HTML parser.<br/>
+    Under the hood, Vue compiles the template into Virtual DOM render functions. Combined with the reactivity system, Vue is able to intelligently figure out the minimal number of components re-render and apply the minimal amount of DOM manipulations when the app state changes. </p>
   </body>
 </html>
