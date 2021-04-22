@@ -32,6 +32,7 @@
     <p>When Vue instance is created, add all the properties found in its data object to Vue's reactivity system. When the values of those properties change, the view will "react", updating to match the new values.</p>
     <h3>Difference between the data property in Vue instance and Vue components?</h3>
     <p>All Vue components are also Vue instance, so accept the same option objects (except for a few root-specific options) The root Vue Instance accepts properties like el and router, but Vue component cannot. The data property of root Vue Instance is an object, but the Vue component must be a function.</p>
-    <p></p>
+    <h3>Instance Lifecycle hooks</h3>
+    <p>Each Vue Instance goes through a series of initialization steps. For example--it needs to set up data observation, compile the template, mount the instance to the DOM, update the DOM when the data changes. Along the way, it also runs functions called Lifecycle hooks, giving users the opportunity to add their own code at specific stages.</p>
   </body>
 </html>
