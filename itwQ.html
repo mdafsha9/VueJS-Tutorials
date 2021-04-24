@@ -40,5 +40,7 @@
     <h3>Difference between computed properties and methods</h3>
     <p>Instead of computed propeerties we can define the same function as a method. For the end result, the two approaches are indeed exactly same. However the difference in computed properties are cached based on their reactive dependencies.<br/>
      methods don't know if the values used in the function changed so the need to run everytime to check. Computed properties know if the the values used in the function change so they don't need to run everytime to check, only once.</p>
+    <h3>class and style binding</h3>
+    <p>A common need for data-binding is manipulating elements class list and it's inline styles. Since they both are attributes, so we can use v-bind to handle them.We only need to calculate final string with our expression.</p>
   </body>
 </html>
