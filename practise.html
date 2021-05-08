@@ -9,6 +9,11 @@
     <meta http-equiv="refersh" content="30">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <title>VueJs Tutorials</title>
+    <style>
+      .red-color{
+        background-color:darkred;
+      }
+    </style>
   </head>
   <body>
       <div id="app">
@@ -94,6 +99,13 @@
         </ol>
       </div>
 
+      <div id="dataBi">
+        <h2>Binding HTML class</h2>
+        <p>Object syntax:</p>
+        <div :class={'red-color':color, }>Class Binding</div>
+        
+        <button @click="color = ! color">Toggle</button>
+      </div>
       <script src="practise.js"></script>
   </body>
 </html>

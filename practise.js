@@ -86,3 +86,10 @@ new Vue({
     ]
   }
 })
+
+new Vue({
+  el:'#dataBi',
+  data:{
+    color:true
+  }
+})
