@@ -11,7 +11,16 @@
     <title>VueJs Tutorials</title>
     <style>
       .red-color{
-        background-color:darkred;
+      color:darkred;
+      font-size: 32px;
+      border:1px solid darkgreen;
+      width:100px;
+      margin:2px;
+      padding-left:20px;
+      border-radius:5px;
+      }
+      .yellow-warning{
+        text-decoration:underline;
       }
     </style>
   </head>
@@ -102,9 +111,8 @@
       <div id="dataBi">
         <h2>Binding HTML class</h2>
         <p>Object syntax:</p>
-        <div :class={'red-color':color, }>Class Binding</div>
-        
-        <button @click="color = ! color">Toggle</button>
+        <div :class={'red-color':color}>Color</div>
+        <button @click="color =! color">Toggle color</button>
       </div>
       <script src="practise.js"></script>
   </body>
