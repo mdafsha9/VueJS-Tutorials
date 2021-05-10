@@ -90,6 +90,7 @@ new Vue({
 new Vue({
   el:'#dataBi',
   data:{
-    color:false
+    color:false,
+    sign:true
   }
 })

@@ -19,8 +19,9 @@
       padding-left:20px;
       border-radius:5px;
       }
-      .yellow-warning{
+      .warning-sign{
         text-decoration:underline;
+        background-color:yellow;
       }
     </style>
   </head>
@@ -111,8 +112,9 @@
       <div id="dataBi">
         <h2>Binding HTML class</h2>
         <p>Object syntax:</p>
-        <div :class={'red-color':color}>Color</div>
+        <div  :class="{'red-color':color, 'warning-sign':sign}">Color</div>
         <button @click="color =! color">Toggle color</button>
+        <button @click="sign =! sign">Toggle Sign</button>
       </div>
       <script src="practise.js"></script>
   </body>
