@@ -10,6 +10,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
     <title>VueJs Tutorials</title>
     <style>
+    .background-color{
+      background-color:cyan;
+    }
       .red-color{
       color:darkred;
       font-size: 32px;
@@ -112,10 +115,21 @@
       <div id="dataBi">
         <h2>Binding HTML class</h2>
         <p>Object syntax:</p>
+        <h5>Single class toggled in the object</h5>
+        <div :class={'background-color':background}>Background</div>
+        <button v-on:click="background =! background">Toggle</button>
+        <h5>Multiple classes toggled by having more fields in the object</h5>
         <div  :class="{'red-color':color, 'warning-sign':sign}">Color</div>
         <button @click="color =! color">Toggle color</button>
         <button @click="sign =! sign">Toggle Sign</button>
+        <h1>Or</h1>
+        <p>Binding HTML class in anothe way. We can also bind to a computed property that returns an object. This is a common and powerful patter.So that we don't need to write more code, we use div in different places</p>
+        <div :class="classObject">Color</div>
+        <button @click="color =! color">Toggle Color</button>
+        <button @click="sign =! sign">Toggle Sign</button>
       </div>
+
+
       <script src="practise.js"></script>
   </body>
 </html>

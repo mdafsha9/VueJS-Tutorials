@@ -90,7 +90,16 @@ new Vue({
 new Vue({
   el:'#dataBi',
   data:{
+    background:true,
     color:false,
     sign:true
+  },
+  computed:{
+    classObject :function(){
+    return{
+      'red-color':this.color,
+      'warning-sign':this.sign
+    }
   }
+}
 })
