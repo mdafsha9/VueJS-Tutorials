@@ -103,3 +103,17 @@ new Vue({
   }
 }
 })
+
+new Vue({
+  el:'#bindInline',
+  data:{
+    highlightColor:'orange',
+    headerSize:50,
+
+  paraStyleObject: {
+    color:'blue',
+    backgroundColor:'orange',
+    padding:'20px'
+  }
+    }
+})

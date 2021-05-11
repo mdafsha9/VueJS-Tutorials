@@ -131,7 +131,11 @@
         <button @click="sign =! sign">Toggle Sign</button>
       </div>
 
-      <div
+      <div id="bindInline">
+        <h1 v-bind:style="{'color':highlightColor, 'font-size':headerSize + 'px', padding:'20px'}">Binding Inline Style</h1>
+        <p>Or</p>
+        <p v-bind:style="paraStyleObject">Binding Inline style:As a no. of properties increases the template become clutered. For that we have to use style object</p>
+      </div>
       <script src="practise.js"></script>
   </body>
 </html>
