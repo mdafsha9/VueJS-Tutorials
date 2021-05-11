@@ -88,7 +88,7 @@ new Vue({
 })
 
 new Vue({
-  el:'#dataBi',
+  el:'#bindClass',
   data:{
     background:true,
     color:false,
