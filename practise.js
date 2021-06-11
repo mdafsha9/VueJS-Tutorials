@@ -123,5 +123,11 @@ new Vue({
   el:"#pa",
   data:{
     cont:'Hello Vuejs!'
+  },
+  methods:{
+    myFuncOnce : function(){
+      this.cont = "Hello Vuejs World!";
+      return this.cont;
+    }
   }
 })

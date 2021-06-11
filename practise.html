@@ -141,7 +141,9 @@
       <h1>Practise again</h1>
 
       <div id="pa">
-        <p>v-text directive updates an element textContent. Internally, mustache are also compiled as v-text directive as a textNode.<p>
+        <p>v-once is used to avoid unwanted re-renders of an element. It treats an element as a static content after rendering it once for the first time. It improves performance as it does not have to be render again.<p>
+        {{cont}}
+        <span v-once>{{myFuncOnce()}}</span>
         {{cont}}
       </div>
       <script src="practise.js"></script>
