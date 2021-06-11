@@ -122,6 +122,7 @@ new Vue({
 new Vue({
   el:"#pa",
   data:{
-    img:'images/download.png'
+    img:'images/download.png',
+    UrlLink:'https://www.tutorialspoint.com'
   }
 })
