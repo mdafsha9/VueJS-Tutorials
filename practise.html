@@ -141,10 +141,9 @@
       <h1>Practise again</h1>
 
       <div id="pa">
-        <p>v-once is used to avoid unwanted re-renders of an element. It treats an element as a static content after rendering it once for the first time. It improves performance as it does not have to be render again.<p>
-        {{cont}}
-        <span v-once>{{myFuncOnce()}}</span>
-        {{cont}}
+        <p>v-html directive updates an element innerHTML. Using v-html with user supplied data can be dangerous. It is suggested that you only use when you are absolutely sure about data source or pipe it through custom filters that sanitizes untrusted HTML.<p>
+        <span v-html="cont"></span>
+
       </div>
       <script src="practise.js"></script>
   </body>
