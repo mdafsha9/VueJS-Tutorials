@@ -117,3 +117,11 @@ new Vue({
   }
     }
 })
+
+
+new Vue({
+  el:"#pa",
+  data:{
+    cont:'Hello Vuejs!'
+  }
+})
