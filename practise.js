@@ -122,6 +122,6 @@ new Vue({
 new Vue({
   el:"#pa",
   data:{
-    cont:'<h1>Vuejs Tutorials</h1><p>Vuejs is a progressive framework and it is used to build dynamically user interface and Single Page Applications.</p>'
+    img:'images/download.png'
   }
 })
