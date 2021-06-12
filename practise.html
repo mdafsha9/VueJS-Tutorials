@@ -125,18 +125,11 @@
       <h1>Practise again</h1>
 
       <div id="pa">
-        <p>conditional groups with v-if on template: Because v-if is a directive, it has to be attached to a single element. But what if we want to toggle more than one element, we can use v-if on template which serves as invisible wrapper. The final rendered result will not include the template element.<p>
-        <template v-if="details">
-          <label>Firstname:</label><br>
-          <input type="text" placeholder="Enter your firstname" key="fname"><br>
-          <label>Lastname:</label><br>
-          <input type="Lastname" placeholder="Enter your lastname" key="lname"><br>
-        </template>
-        <template v-else>
-          <label>Email Address:</label><br>
-          <input type="email" placeholder="Enter your Email address" key="email"><br>
-        </template>
-        <button @click="details =! details">Submit</button>
+        <p>v-else directive must immediately follow v-if oe v-else-if directive, otherwise it will not be recognized.<p>
+        <div v-if="status == 'received'">Application received!</div>
+        <div v-else-if="status == 'pending'">Application pending!</div>
+        <div v-else-if="status == 'process'">Processing application...</div>
+        <div v-else>Congratulations!</div>
       </div>
       <script src="practise.js"></script>
   </body>

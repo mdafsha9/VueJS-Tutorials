@@ -122,6 +122,6 @@ new Vue({
 new Vue({
   el:"#pa",
   data:{
-    details:false
+    status:'pending'
   }
 })
