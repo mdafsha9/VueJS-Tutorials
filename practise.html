@@ -142,9 +142,18 @@
       <h1>Practise again</h1>
 
       <div id="pa">
-        <p>v-if directive is used conditionally rendered a block.The block will only be rendered if the directives expression returns truthy value.<p>
-        <div v-if="awesome">Awesome!</div>
-        <div v-else>Oh no!</div>
+        <p>conditional groups with v-if on template: Because v-if is a directive, it has to be attached to a single element. But what if we want to toggle more than one element, we can use v-if on template which serves as invisible wrapper. The final rendered result will not include the template element.<p>
+        <template v-if="details">
+          <label>Firstname:</label><br>
+          <input type="text" placeholder="Enter your firstname" key="fname"><br>
+          <label>Lastname:</label><br>
+          <input type="Lastname" placeholder="Enter your lastname" key="lname"><br>
+        </template>
+        <template v-else>
+          <label>Email Address:</label><br>
+          <input type="email" placeholder="Enter your Email address" key="email"><br>
+        </template>
+        <button @click="details =! details">Submit</button>
       </div>
       <script src="practise.js"></script>
   </body>

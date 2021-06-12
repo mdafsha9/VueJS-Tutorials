@@ -122,6 +122,6 @@ new Vue({
 new Vue({
   el:"#pa",
   data:{
-    awesome:true
+    details:false
   }
 })
