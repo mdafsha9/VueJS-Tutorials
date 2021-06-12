@@ -1,0 +1,20 @@
+.background-color{
+  background-color:cyan;
+}
+  .red-color{
+  color:darkred;
+  font-size: 32px;
+  border:1px solid darkgreen;
+  width:100px;
+  margin:2px;
+  padding-left:20px;
+  border-radius:5px;
+  }
+  .warning-sign{
+    text-decoration:underline;
+    background-color:yellow;
+  }
+  input{
+    margin-top:5px;
+    margin-bottom:10px;
+  }
