@@ -140,8 +140,34 @@
           <input type="number" id="num" min="1" max="9" v-model="pickNum">
           <p>Your lucky number is : {{pickNum}}</p>
           <label for="level">Select where you are in VueJS:</label>
-          <input type="range" min="10" max="100" v-model="selLevel">
-          <p>You own:{{selLevel}}%</p>
+          <input type="range" id="level" min="10" max="100" v-model="selLevel">
+          <p>You own:{{selLevel}}%</p><br>
+          <label for="dat">Select last date of your old job:</label>
+          <input type="date" id="dat" v-model="selDate">
+          <p>Old job last date is : {{selDate}}</p><br>
+          <label for="mon">Select your first working month:</label>
+          <input type="month" id="mon" v-model="selMonth">
+          <p>First working month is: {{selMonth}}</p><br>
+          <label for="wee">Select your first working Week:</label>
+          <input type="week" id="wee" v-model="selWeek">
+          <p>First working month is: {{selWeek}}</p><br>
+          <label for="tim">Application submitting time:</label>
+          <input type="time" id="tim" v-model="selTime">
+          <p>Time right now: {{selTime}}</p><br>
+          <label for="loc">Application submitting local time</label>
+          <input type="datetime-local" id="wee" v-model="selLocal">
+          <p>Your local date and time: {{selLocal}}</p><br>
+          <label for="con">Enter your contact number:</label>
+          <input type="tel" id="con" v-model="contact">
+          <p>Here is your contact no.:{{contact}}</p><br>
+          <label for="pswd">Enter your password here:</label>
+          <input type="password" id="pswd" v-model="pwd">
+          <p>Here is your password:{{pwd}}</p><br>
+          <label for="res">Application reset:</label>
+          <input type="reset" id="con">
+          <label for="sub">Submit your form:</label>
+          <input type="submit" id="con">
+
 
         </fieldset>
       </form>

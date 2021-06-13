@@ -124,7 +124,14 @@ new Vue({
     message:'',
     pickColor:'',
     pickNum:'',
-    selLevel:''
+    selLevel:'',
+    selDate:'',
+    selMonth:'',
+    selWeek:'',
+    selTime:'',
+    selLocal:'',
+    contact:'',
+    pwd:''
   }
 })
 
