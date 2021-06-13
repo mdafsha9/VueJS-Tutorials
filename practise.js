@@ -118,6 +118,15 @@ new Vue({
     }
 })
 
+new Vue({
+  el:'#modDir',
+  data:{
+    message:'',
+    pickColor:'',
+    pickNum:'',
+    selLevel:''
+  }
+})
 
 new Vue({
   el:"#pa",

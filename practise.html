@@ -122,6 +122,32 @@
         <p v-bind:style="paraStyleObject">Binding Inline style:As a no. of properties increases the template become clutered. For that we have to use style object</p>
       </div>
 
+      <h1>Form input bindings using v-model directive</h1>
+      <h2>Basic usage</h2>
+      <p>It allows us to bind two-way-data binding. We can bind the form input, textarea and select elements for example and make it change the Vue data property when the user changes the content of the field.</p>
+      <h3>Text</h3>
+      <div id="modDir">
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Input types</legend>
+          <label for="fullname">Fullname:</label>
+          <input type="text" v-model="message" placeholder="Enter your name here"><br>
+          <p>Your full name is : {{message}}</p><br>
+          <label for="favColor">Favourite Color:</label>
+          <input type="color" v-model="pickColor" id="favColor">
+          <p>Your favourite color is: {{pickColor}}</p><br>
+          <label for="num">Pick your lucky number:</label>
+          <input type="number" id="num" min="1" max="9" v-model="pickNum">
+          <p>Your lucky number is : {{pickNum}}</p>
+          <label for="level">Select where you are in VueJS:</label>
+          <input type="range" min="10" max="100" v-model="selLevel">
+          <p>You own:{{selLevel}}%</p>
+
+        </fieldset>
+      </form>
+    </div>
+
+
       <h1>Practise again</h1>
 
       <div id="pa">
