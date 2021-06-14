@@ -212,6 +212,18 @@
           <span>You picked:{{picked}}</span>
         </fieldset>
       </form>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Select with options:</legend>
+          <select v-model="selected">
+            <option disabled value="">Please select one:</option>
+            <option>Full stack</option>
+            <option>Front End</option>
+            <option>Back End</option>
+          </select>
+          <span>You selected:{{selected}}</span>
+        </fieldset>
+      </form>
     </div>
 
 
