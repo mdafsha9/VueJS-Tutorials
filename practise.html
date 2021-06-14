@@ -177,11 +177,12 @@
       <h1>Practise again</h1>
 
       <div id="pa">
-        <p>v-else directive must immediately follow v-if oe v-else-if directive, otherwise it will not be recognized.<p>
-        <div v-if="status == 'received'">Application received!</div>
-        <div v-else-if="status == 'pending'">Application pending!</div>
-        <div v-else-if="status == 'process'">Processing application...</div>
-        <div v-else>Congratulations!</div>
+        <p>The directive v-for is used to render list of items based on an array.The v-for directive requires special syntax like <q>item in items</q> whereas items is a source data array and item is an alias array element is iterated on.<p>
+        <ul>
+          <li v-for="item in items">
+            {{item.text}}
+          </li>
+        </ul>
       </div>
       <script src="practise.js"></script>
   </body>

@@ -138,6 +138,11 @@ new Vue({
 new Vue({
   el:"#pa",
   data:{
-    status:'pending'
+    items:[
+      {text:'Roman Alphabets'},
+      {text:'Lower Alphabets'},
+      {text:'numbers'},
+      {text:'Words'}
+    ]
   }
 })
