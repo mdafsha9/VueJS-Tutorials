@@ -133,7 +133,8 @@ new Vue({
     contact:'',
     pwd:'',
     checked:[],
-    message:''
+    message:'',
+    picked:''
   }
 })
 

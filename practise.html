@@ -200,6 +200,18 @@
           <textarea style="width:300px; height:100px;" v-model="message" placeholder="Add multiple lines here..."></textarea>
         </fieldset>
       </form>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Gender</legend>
+          <input type="radio" id="male" name="gender" value="male" v-model="picked">
+          <label for="male">Male</label><br>
+          <input type="radio" id="female" name="gender" value="female" v-model="picked">
+          <label for="female">Female</label><br>
+          <input type="radio" id="others" name="gender" value="others" v-model="picked">
+          <label for="others">Others</label><br>
+          <span>You picked:{{picked}}</span>
+        </fieldset>
+      </form>
     </div>
 
 
