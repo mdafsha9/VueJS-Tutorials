@@ -131,44 +131,52 @@
         <fieldset>
           <legend>Input types</legend>
           <label for="fullname">Fullname:</label>
-          <input type="text" v-model="message" placeholder="Enter your name here"><br>
+          <input type="text" v-model="message" placeholder="Enter your name here" key="fullname"><br>
           <p>Your full name is : {{message}}</p><br>
+          <label for="ema">Email Address:</label>
+          <input type="email" placeholder="Enter your email address"><br>
           <label for="favColor">Favourite Color:</label>
-          <input type="color" v-model="pickColor" id="favColor">
+          <input type="color" v-model="pickColor" id="favColor" key="color">
           <p>Your favourite color is: {{pickColor}}</p><br>
           <label for="num">Pick your lucky number:</label>
-          <input type="number" id="num" min="1" max="9" v-model="pickNum">
+          <input type="number" id="num" min="1" max="9" v-model="pickNum" key="luckynum">
           <p>Your lucky number is : {{pickNum}}</p>
           <label for="level">Select where you are in VueJS:</label>
-          <input type="range" id="level" min="10" max="100" v-model="selLevel">
+          <input type="range" id="level" min="10" max="100" v-model="selLevel" key="perlevel">
           <p>You own:{{selLevel}}%</p><br>
           <label for="dat">Select last date of your old job:</label>
-          <input type="date" id="dat" v-model="selDate">
+          <input type="date" id="dat" v-model="selDate" key="date">
           <p>Old job last date is : {{selDate}}</p><br>
           <label for="mon">Select your first working month:</label>
-          <input type="month" id="mon" v-model="selMonth">
+          <input type="month" id="mon" v-model="selMonth" key="month">
           <p>First working month is: {{selMonth}}</p><br>
           <label for="wee">Select your first working Week:</label>
-          <input type="week" id="wee" v-model="selWeek">
+          <input type="week" id="wee" v-model="selWeek" key="week">
           <p>First working month is: {{selWeek}}</p><br>
           <label for="tim">Application submitting time:</label>
-          <input type="time" id="tim" v-model="selTime">
+          <input type="time" id="tim" v-model="selTime" key="datetime">
           <p>Time right now: {{selTime}}</p><br>
           <label for="loc">Application submitting local time</label>
-          <input type="datetime-local" id="wee" v-model="selLocal">
+          <input type="datetime-local" id="wee" v-model="selLocal" key="local">
           <p>Your local date and time: {{selLocal}}</p><br>
           <label for="con">Enter your contact number:</label>
-          <input type="tel" id="con" v-model="contact">
+          <input type="tel" id="con" v-model="contact" key="contact">
           <p>Here is your contact no.:{{contact}}</p><br>
+          <label for="url">Upload your portfolio link here:</label>
+          <input type="url" id="url"><br>
+          <label for="img">Upload any work images here:</label>
+          <input type="image" id="img"><br>
+          <label for="file">Upload your extra work here:</label>
+          <input type="file" id="file"><br>
           <label for="pswd">Enter your password here:</label>
-          <input type="password" id="pswd" v-model="pwd">
+          <input type="password" id="pswd" v-model="pwd" key="pswd">
           <p>Here is your password:{{pwd}}</p><br>
           <label for="res">Application reset:</label>
           <input type="reset" id="con">
           <label for="sub">Submit your form:</label>
-          <input type="submit" id="con">
-
-
+          <input type="submit" id="con"><br>
+          <label for="sea">You can search more jobs here:</label>
+          <input type="search" id="sea" key="search">
         </fieldset>
       </form>
     </div>
