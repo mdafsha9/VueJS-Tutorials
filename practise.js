@@ -135,7 +135,8 @@ new Vue({
     checked:[],
     message:'',
     picked:'',
-    selected:''
+    selected:'',
+    select:''
   }
 })
 

@@ -214,14 +214,23 @@
       </form>
       <form action="#" method="get">
         <fieldset>
-          <legend>Select with options:</legend>
+          <legend>Select single options:</legend>
           <select v-model="selected">
             <option disabled value="">Please select one:</option>
             <option>Full stack</option>
             <option>Front End</option>
             <option>Back End</option>
-          </select>
+          </select><br>
           <span>You selected:{{selected}}</span>
+        </fieldset>
+        <fieldset>
+          <legend>Select multiple options:</legend>
+          <select v-model="select" multiple>
+            <option>Full stack</option>
+            <option>Front End</option>
+            <option>Back End</option>
+          </select><br>
+          <span>You selected:{{select}}</span>
         </fieldset>
       </form>
     </div>
