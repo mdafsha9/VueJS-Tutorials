@@ -132,7 +132,8 @@ new Vue({
     selLocal:'',
     contact:'',
     pwd:'',
-    checked:[]
+    checked:[],
+    message:''
   }
 })
 
