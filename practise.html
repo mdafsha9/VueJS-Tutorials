@@ -179,6 +179,20 @@
           <input type="search" id="sea" key="search">
         </fieldset>
       </form>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Select vehicles you own</legend>
+          <input type="checkbox" value="bike" id="bike" v-model="checked">
+          <label for="bike">Bike</label><br>
+          <input type="checkbox" value="car" id="car" v-model="checked">
+          <label for="car">Car</label><br>
+          <input type="checkbox" value="van" id="van" v-model="checked">
+          <label for="van">Van</label><br>
+          <input type="checkbox" value="bus" id="bus" v-model="checked">
+          <label for="bus">Bus</label><br>
+          <p>You owned vehicles are {{checked}}</p>
+        </fieldset>
+      </form>
     </div>
 
 
