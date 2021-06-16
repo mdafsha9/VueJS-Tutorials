@@ -235,9 +235,16 @@
       </form>
     </div>
 
+    <h1>Form modifiers</h1>
+    <div id="formodi">
+      <h2>.lazy</h2>
+      <p>By default, v-model sync input with the data after each .input event<br>
+      We can add lazy modifier to v-model after change events.</p>
+      <input type="text" v-model.lazy="msz">
+      <p>Form modifier lazy is : {{msz}}</p>
+    </div>
 
       <h1>Practise again</h1>
-
       <div id="pa">
         <p>The directive v-for is used to render list of items based on an array.The v-for directive requires special syntax like <q>item in items</q> whereas items is a source data array and item is an alias array element is iterated on.<p>
         <ul>
@@ -246,6 +253,8 @@
           </li>
         </ul>
       </div>
+
+
       <script src="practise.js"></script>
   </body>
 </html>

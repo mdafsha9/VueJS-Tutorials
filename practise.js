@@ -141,6 +141,13 @@ new Vue({
 })
 
 new Vue({
+  el:'#formodi',
+  data:{
+    msz:''
+  }
+})
+
+new Vue({
   el:"#pa",
   data:{
     items:[
