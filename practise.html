@@ -109,7 +109,7 @@
         <div  :class="{'red-color':color, 'warning-sign':sign}">Color</div>
         <button @click="color =! color">Toggle color</button>
         <button @click="sign =! sign">Toggle Sign</button>
-        <h1>Or</h1>
+        <h2>Or</h2>
         <p>Binding HTML class in anothe way. We can also bind to a computed property that returns an object. This is a common and powerful patter.So that we don't need to write more code, we use div in different places</p>
         <div :class="classObject">Color</div>
         <button @click="color =! color">Toggle Color</button>
@@ -117,7 +117,7 @@
       </div>
 
       <div id="bindInline">
-        <h1 v-bind:style="{'color':highlightColor, 'font-size':headerSize + 'px', padding:'20px'}">Binding Inline Style</h1>
+        <h2 v-bind:style="{'color':highlightColor, 'font-size':headerSize + 'px', padding:'20px'}">Binding Inline Style</h2>
         <p>Or</p>
         <p v-bind:style="paraStyleObject">Binding Inline style:As a no. of properties increases the template become clutered. For that we have to use style object</p>
       </div>
@@ -256,9 +256,8 @@
       <p>you typed:{{typeof(num)}}</p>
       <input type="text" v-model.trim.lazy="msz">
       <p>You typed:{{msz}}</p>
-
     </div>
-
+  
       <h1>Practise again</h1>
       <div id="pa">
         <p>The directive v-for is used to render list of items based on an array.The v-for directive requires special syntax like <q>item in items</q> whereas items is a source data array and item is an alias array element is iterated on.<p>
