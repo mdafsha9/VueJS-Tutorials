@@ -247,6 +247,10 @@
       <input type="number" v-model.number="age"><br>
       <span>Given data is :{{typeof(age)}}</span>
       <p>Your age is {{age}}</p>
+      <h2>.trim modifier</h2>
+      <p>If we want whitespace from user input to be trimmed automatically, we can add trim modifier to managed input.</p>
+      <input type="msz" v-model.trim="msz">
+      <p>You typed:{{msz}}</p>
 
     </div>
 
