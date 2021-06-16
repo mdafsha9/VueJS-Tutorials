@@ -143,7 +143,8 @@ new Vue({
 new Vue({
   el:'#formodi',
   data:{
-    msz:''
+    msz:'',
+    age:''
   }
 })
 

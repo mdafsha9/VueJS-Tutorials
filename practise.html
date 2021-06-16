@@ -237,11 +237,17 @@
 
     <h1>Form modifiers</h1>
     <div id="formodi">
-      <h2>.lazy</h2>
+      <h2>.lazy modifier</h2>
       <p>By default, v-model sync input with the data after each .input event<br>
       We can add lazy modifier to v-model after change events.</p>
       <input type="text" v-model.lazy="msz">
       <p>Form modifier lazy is : {{msz}}</p>
+      <h2>.number modifier</h2>
+      <p>If we want user input to be automatically typecast as a number, we can add .number modifier to v-model managed input</p>
+      <input type="number" v-model.number="age"><br>
+      <span>Given data is :{{typeof(age)}}</span>
+      <p>Your age is {{age}}</p>
+
     </div>
 
       <h1>Practise again</h1>
