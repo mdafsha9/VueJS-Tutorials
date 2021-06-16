@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="us-en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Vuejs">
+    <meta name="description" content="Components">
+    <meta name="keywords" content="Vuejs, components, vueInstance">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Components Tutorials</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  </head>
+  <body>
+    <h1>Components</h1>
+      <p>we have two options when defining component name:<<br>
+        1.Kebab-case:<br>
+        <code>Vue.component('test-component', {<br>
+        })<br>
+        </code>
+        2..Pascal case:<br>
+        <code>
+          Vue.component('TestComponent', {
+          })
+        </code>
+      </p>
+    <div id="comp">
+      <test-component></test-component>
+      
+    </div>
+    <script type="text/javascript" src="components.js"></script>
+  </body>
+</html>
