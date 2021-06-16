@@ -249,7 +249,12 @@
       <p>Your age is {{age}}</p>
       <h2>.trim modifier</h2>
       <p>If we want whitespace from user input to be trimmed automatically, we can add trim modifier to managed input.</p>
-      <input type="msz" v-model.trim="msz">
+      <input type="text" v-model.trim="msz">
+      <p>You typed:{{msz}}</p>
+      <h2>use two modiiers at the same time</h2>
+      <input type="number" v-model.number.lazy="num">
+      <p>you typed:{{typeof(num)}}</p>
+      <input type="text" v-model.trim.lazy="msz">
       <p>You typed:{{msz}}</p>
 
     </div>
