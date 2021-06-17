@@ -19,3 +19,14 @@ new Vue({
     }
   }
 })
+
+Vue.component('re-component',{
+    data:function(){
+      this.msz = "Hello World!";
+      return this.msz;
+    },
+  template:'<div><h2>{{msz}}</h2></div>'
+})
+new Vue({
+  el:'#reComp'
+})
