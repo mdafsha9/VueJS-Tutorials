@@ -22,11 +22,19 @@ new Vue({
 
 Vue.component('re-component',{
     data:function(){
-      this.msz = "Hello World!";
+      this.msz = "Hello... We are reusing components here!";
       return this.msz;
     },
-  template:'<div><h2>{{msz}}</h2></div>'
+  template:'<div><h4>{{msz}}</h4></div>'
 })
 new Vue({
   el:'#reComp'
+})
+
+Vue.component('blog-post', {
+  props:['title'],
+  template:'<div>{{title}}</div>'
+})
+new Vue({
+  el:'#pro'
 })
