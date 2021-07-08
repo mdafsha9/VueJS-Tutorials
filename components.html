@@ -45,11 +45,19 @@
       <p>Creating a component blog-post. That's the problem components won't be useful unless you pass data to it.<br>
        Such as the title and content of specific post we want to display. That's where prop's come in.<br>
        Props are custom attributes you can register on a component. When a value is passed to prop attribute, it becomes property on that component instance</p>
+       <i>Passing static props</i>
       <blog-post title="Welcome to props!"></blog-post>
       <blog-post title="parent to child components!"></blog-post>
       <blog-post title="can pass title and content!"></blog-post>
     </div>
 
+    <h1>Prop Types</h1>
+    <i>Passing dynamic props</i>
+    <div id="proTypes">
+      <blog-test v-for="posts in post" v-bind:key="post.id" v-bind:title="post.title"></blog-test>
+
+
+    </div>
     <script type="text/javascript" src="components.js"></script>
   </body>
 </html>

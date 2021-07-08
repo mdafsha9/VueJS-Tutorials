@@ -38,3 +38,18 @@ Vue.component('blog-post', {
 new Vue({
   el:'#pro'
 })
+
+Vue.component('blog-test', {
+props:['title'],
+template:"<p>{{title}}</p>"
+});
+new Vue({
+  el:'#proTypes',
+  data:{
+    posts:[
+      {id:1, title:'Vuejs1'},
+      {id:2, title:'Vuejs2'},
+      {id:3, title:'Vuejs3'}
+    ]
+  }
+})
