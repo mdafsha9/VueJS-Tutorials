@@ -150,13 +150,8 @@ new Vue({
 })
 
 new Vue({
-  el:"#pa",
-  data:{
-    items:[
-      {text:'Roman Alphabets'},
-      {text:'Lower Alphabets'},
-      {text:'numbers'},
-      {text:'Words'}
-    ]
-  }
+ el:"#pa",
+ data:{
+   title:'Hellooooo....'
+ }
 })
