@@ -1,0 +1,39 @@
+name: Ci/Cd Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Run on pushes to the main branch
+  pull_request:
+    branches:
+      - main  # Run on pull requests to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Use the latest version of Ubuntu
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # Check out your repository code
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2  # Set up Node.js environment
+      with:
+        node-version: '14'  # Specify the Node.js version
+
+    - name: Install dependencies
+      run: npm install  # Install project dependencies
+
+    - name: Run tests
+      run: npm test  # Run tests defined in your package.json
+
+    - name: Deploy to production
+      run: npm run deploy  # Run the deploy script
+      env:
+        DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}  # Use secret for deployment token
+
+    - name: Upload Build Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: build-files
+        path: ./dist  # Ensure the path is correct
